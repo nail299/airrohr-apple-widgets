@@ -74,10 +74,12 @@ The widgets are based on the free app **Scriptable**, which serves as a bridge b
 This is a standard macOS feature to avoid distractions while working. You can disable it permanently:
 *Go to: System Settings -> Desktop & Dock -> Scroll down to "Widgets" -> Set Widget style from "Monochrome" to "Full-color".*
 
-**How do I change the name of my station in the widget?**
+**How do I change the name of my station or translate the labels?**
 The name is loaded dynamically directly from the openSenseMap database. If you want to overwrite it permanently just locally for your Apple widget (e.g., to "Garden"), change the following line of code in the info block:
 *Before:* `let title = titleRow.addText(data ? data.name : "openSenseMap");`
 *After:* `let title = titleRow.addText("My Garden");`
+
+**Translation Tip:** You can also easily translate all other texts (like "Humidity" or "24 hours") into any other language. Just search the code for the words inside the straight quotation marks (e.g., `"Humidity"`) and replace them with your preferred term (e.g., `"Humedad"`).
 
 **How can I change the small globe emoji (🌍) without the script crashing?**
 If you replace the emoji in the code, make absolutely sure that the straight quotation marks (`"`) remain intact. The iOS keyboard on the phone often accidentally turns these into slanted quotation marks (`„` `“`). This immediately leads to an `Unexpected EOF` system error in the code.
