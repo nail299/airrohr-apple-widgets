@@ -54,3 +54,31 @@ The widgets are based on the free app **Scriptable**, which serves as a bridge b
 4. At the very top of the code in **line 4**, paste your previously copied ID:
 ```javascript
    const SENSEBOX_ID = "INSERT_YOUR_SENSEBOX_ID_HERE";
+```
+---
+
+## ✨ Features & Technical Details
+
+* **Native Rendering:** The trend curves are calculated and drawn locally on your device. No error-prone images need to be loaded from the internet.
+* **Intelligent Downsampling:** To meet the strict memory limits (RAM) of Apple widgets, the script mathematically reduces the historical raw data of the entire week to exactly 60 data points per chart. This saves battery and data volume.
+* **Dynamic Warning Colors:** The particulate matter values in the widget automatically change color:
+  * *White:* Normal range
+  * *Orange:* Reaching 70% of the limit value (Early warning)
+  * *Red:* Exceeding the WHO limit value (PM2.5 > 25 µg | PM10 > 50 µg)
+
+---
+
+## ❓ FAQ & Troubleshooting
+
+**Why is the widget gray/colorless on the Mac desktop?**
+This is a standard macOS feature to avoid distractions while working. You can disable it permanently:
+*Go to: System Settings -> Desktop & Dock -> Scroll down to "Widgets" -> Set Widget style from "Monochrome" to "Full-color".*
+
+**How do I change the name of my station in the widget?**
+The name is loaded dynamically directly from the openSenseMap database. If you want to overwrite it permanently just locally for your Apple widget (e.g., to "Garden"), change the following line of code in the info block:
+*Before:* `let title = titleRow.addText(data ? data.name : "openSenseMap");`
+*After:* `let title = titleRow.addText("My Garden");`
+
+**How can I change the small globe emoji (🌍) without the script crashing?**
+If you replace the emoji in the code, make absolutely sure that the straight quotation marks (`"`) remain intact. The iOS keyboard on the phone often accidentally turns these into slanted quotation marks (`„` `“`). This immediately leads to an `Unexpected EOF` system error in the code.
+*Correct:* `let icon = titleRow.addText("🏠 ");`
