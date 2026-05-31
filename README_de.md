@@ -74,10 +74,12 @@ Die Widgets basieren auf der kostenlosen App **Scriptable**, die als Brücke zwi
 Das ist ein Standard-Feature von macOS, um Ablenkungen beim Arbeiten zu vermeiden. Du kannst es dauerhaft abschalten:
 *Gehe zu: Systemeinstellungen -> Schreibtisch & Dock -> Scrolle runter zu "Widgets" -> Setze den Widget-Stil von "Monochrom" auf "Vollfarbig".*
 
-**Wie ändere ich den Namen meiner Station im Widget?**
+**Wie ändere ich den Namen meiner Station oder übersetze die Bezeichnungen?**
 Der Name wird dynamisch direkt aus der openSenseMap-Datenbank geladen. Möchtest du ihn dauerhaft nur lokal für dein Apple-Widget überschreiben (z.B. in "Garten"), ändere folgende Code-Zeile im Info-Block:
 *Vorher:* `let title = titleRow.addText(data ? data.name : "openSenseMap");`
 *Nachher:* `let title = titleRow.addText("Mein Garten");`
+
+**Tipp zur Übersetzung:** Du kannst auch alle anderen Texte (wie "Luftfeuchte", "Luftdruck" oder "24 Stunden") ganz einfach in eine andere Sprache übersetzen. Suche dazu im Code einfach nach den jeweiligen Wörtern in den geraden Anführungszeichen (z. B. `"Luftfeuchte"`) und ersetze sie durch deinen Wunschbegriff.
 
 **Wie kann ich das kleine Globus-Emoji (🌍) ändern, ohne dass das Skript abstürzt?**
 Wenn du das Emoji im Code durch ein anderes ersetzt, achte zwingend darauf, dass die geraden Anführungszeichen (`"`) erhalten bleiben. Die iOS-Tastatur auf dem Handy macht daraus oft versehentlich schräge Anführungszeichen (`„` `“`). Das führt sofort zu einem sogenannten `Unexpected EOF` Systemfehler im Code.
