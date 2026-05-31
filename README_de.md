@@ -54,7 +54,7 @@ Die Widgets basieren auf der kostenlosen App **Scriptable**, die als Brücke zwi
 
 1. Lade dir [Scriptable](https://scriptable.app/) aus dem App Store für iOS oder macOS herunter.
 2. Öffne die App und erstelle über das **+** Symbol oben rechts ein neues, leeres Skript.
-3. Kopiere den gesamten Code aus der Datei `widget-medium-werte.js` oder `widget-large-trends.js` hier aus GitHub und füge ihn in dieses leere Skript ein.
+3. Kopiere den gesamten Code aus der Datei `widget-medium-werte-DE.js` oder `widget-large-trends-DE.js` hier aus GitHub und füge ihn in dieses leere Skript ein.
 4. Trage ganz oben im Code in **Zeile 4** deine vorhin kopierte ID ein:
 ```javascript
    const SENSEBOX_ID = "DEINE_SENSEBOX_ID_HIER_EINTRAGEN";
