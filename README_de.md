@@ -6,6 +6,10 @@
 
 Mit diesen Scriptable-Skripten kannst du die Live-Daten und historischen Trends (24 Stunden & 7 Tage) deines openSenseMap- oder Sensor.Community-Feinstaubsensors direkt als native Widgets auf deinem Apple-Schreibtisch (macOS) oder Homescreen (iOS) anzeigen lassen.
 
+<p align="center">
+  <img src="airrohr-apple-widgets.png" alt="Vorschau der Widgets" width="600"/>
+</p>
+
 Es stehen zwei optimierte Widget-Layouts zur Verfügung:
 * **Medium-Widget:** Kompakte Live-Werte (Temperatur, Luftfeuchte, Luftdruck, PM2.5, PM10) mit intelligenter Einfärbung bei Annäherung an WHO-Grenzwerte.
 * **Large-Widget:** Eine reine Trend-Matrix. Zeichnet native Sparkline-Diagramme für die letzten 24 Stunden und 7 Tage.
