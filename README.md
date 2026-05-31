@@ -4,6 +4,10 @@
 
 # 🌍 airRohr/Particulate Matter Sensor Apple Widgets (iOS/iPadOS/macOS)
 
+<p align="center">
+  <img src="airrohr-apple-widgets.png" alt="Vorschau der Widgets" width="600"/>
+</p>
+
 With these Scriptable scripts, you can display live data and historical trends (24 hours & 7 days) of your openSenseMap or Sensor.Community particulate matter sensor directly as native widgets on your Apple desktop (macOS) or home screen (iOS).
 
 Two optimized widget layouts are available:
