@@ -50,6 +50,9 @@ The widgets are based on the free app **Scriptable**, which serves as a bridge b
 4. At the very top of the code in **line 4**, paste your previously copied ID:
 ```javascript
    const SENSEBOX_ID = "INSERT_YOUR_SENSEBOX_ID_HERE";
+   ```
+---
+
 ---
 
 ## ✨ Features & Technical Details
